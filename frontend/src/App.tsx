@@ -3,7 +3,7 @@ import { Activity, ArrowDownRight, ArrowUpRight, BarChart3, Bell, ChevronDown, C
 import ForecastPanel, { type ForecastModel } from './ForecastPanel'
 import { Area, AreaChart, Bar, BarChart, CartesianGrid, Cell, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 
-const API = '/api'
+const API = (import.meta.env.VITE_API_URL || (import.meta.env.DEV ? '/api' : '')).replace(/\/$/, '')
 
 type View = 'Overview' | 'Analytics' | 'Forecast' | 'Customers' | 'Products' | 'Settings'
 type Dashboard = {
@@ -76,6 +76,12 @@ export default function App() {
     const controller = new AbortController()
     setLoading(true)
     setError('')
+    if (!API) {
+      setError('VITE_API_URL não está configurada neste ambiente.')
+      setLoading(false)
+      manualRefresh.current = false
+      return () => controller.abort()
+    }
     const forecastFilters = view === 'Forecast' ? `?period=${encodeURIComponent(period)}&category=${encodeURIComponent(category)}` : ''
     Promise.all([
       fetch(`${API}/dashboard?period=${encodeURIComponent(period)}&category=${encodeURIComponent(category)}`, { signal: controller.signal }),
@@ -234,7 +240,7 @@ export default function App() {
       <div className="content">
         {showForecast && <ForecastPanel forecast={forecast} period={period} category={category} loading={loading} />}
         <div className="heading-row"><div><div className="eyebrow"><span className="live-dot" /> SEU NEGÓCIO EM TEMPO REAL</div><h1>{viewTitles[view]}</h1><p className="subtitle">Acompanhe seus resultados e transforme dados em decisões.</p></div><button className="export" onClick={() => exportData(view === 'Settings' ? 'Overview' : view)} disabled={!data}><Download size={15} /> Exportar CSV</button></div>
-        {error && <div className="error" role="alert">Não foi possível conectar à API. Inicie o backend em <code>localhost:8000</code>. <span>{error}</span><button onClick={refreshData}>Tentar novamente</button></div>}
+        {error && <div className="error" role="alert">Não foi possível conectar à API. <span>{error}</span><button onClick={refreshData}>Tentar novamente</button></div>}
 
         {view !== 'Settings' && <div className="filter-row"><div className="filter-left"><span className="filter-caption">Visualizando</span><select value={period} onChange={event => setPeriod(event.target.value)} aria-label="Período"><option value="3m">Últimos 3 meses</option><option value="6m">Últimos 6 meses</option><option value="12m">Últimos 12 meses</option><option value="Tudo">Todo o período</option></select><span className="filter-caption category-caption">Categoria</span><select value={category} onChange={event => setCategory(event.target.value)} aria-label="Categoria"><option value="Todas">Todas</option>{data?.sales_by_category.map(item => <option key={item.category} value={item.category}>{item.category}</option>)}</select>{(period !== '12m' || category !== 'Todas' || query) && <button className="clear-filters" onClick={clearFilters}>Limpar filtros</button>}</div><div className="updated"><span className={`live-dot ${loading ? 'loading-dot' : ''}`} />{loading ? 'Atualizando dados...' : updatedAt ? `Atualizado às ${updatedAt.toLocaleTimeString('pt-BR')}` : 'Aguardando dados'}<button className="refresh-button" onClick={refreshData} disabled={loading} aria-label="Atualizar dados" title="Atualizar dados"><RefreshCw size={14} className={loading ? 'spin' : ''} /></button></div></div>}
 

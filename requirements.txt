@@ -1,0 +1,5 @@
+# Runtime dependencies for the Vercel FastAPI function.
+# Keep these version ranges aligned with backend/requirements.txt.
+fastapi>=0.115,<1.0
+pandas>=2.2,<3.0
+scikit-learn>=1.5,<2.0

@@ -43,7 +43,18 @@ Requer Python 3.10+ e Node.js 20+.
 4. Em outro terminal, instale o frontend: `cd frontend`, `npm install`, `npm run dev`.
 5. Abra `http://localhost:5173`.
 
-Durante o desenvolvimento, o Vite encaminha `/api` para o FastAPI em `http://127.0.0.1:8000`, sem depender se a interface iniciou em `5173`, `5174` ou outra porta livre. A API também aceita CORS apenas de origens `localhost`/`127.0.0.1`, incluindo portas de desenvolvimento alternativas. Para executar os testes, na raiz com ambiente virtual ativo: `python -m pytest backend/tests`.
+Durante o desenvolvimento, o Vite encaminha `/api` para o FastAPI em `http://127.0.0.1:8000`, sem depender se a interface iniciou em `5173`, `5174` ou outra porta livre. Para executar os testes, na raiz com ambiente virtual ativo: `python -m pytest backend/tests`.
+
+## Deploy na Vercel
+
+Publique o mesmo repositório como dois projetos Vercel:
+
+1. **API:** raiz do projeto na raiz do repositório (`.`), preset Python/FastAPI. O `pyproject.toml` aponta para `backend.app.main:app`; `vercel.json` inclui `dados/vendas.csv` no bundle da função.
+2. **Frontend:** raiz do projeto em `frontend/`, preset Vite, comando de build `npm run build` e saída `dist`.
+
+No projeto da API, configure `FRONTEND_ORIGINS` com a origem pública do frontend. No projeto frontend, configure `VITE_API_URL` com a URL pública da API terminando em `/api`, por exemplo `https://pulse-analytics-api.vercel.app/api`. Use o domínio real atribuído pela Vercel e inclua também as origens de preview que precisar testar. Sem essa variável, a interface usa `/api` e o proxy local do Vite continua funcionando em desenvolvimento.
+
+Dependências Python exclusivas do runtime Vercel ficam no `requirements.txt` da raiz; mantenha-as alinhadas com `backend/requirements.txt`.
 
 ## Como funciona o Machine Learning
 

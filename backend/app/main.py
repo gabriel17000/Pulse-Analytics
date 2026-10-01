@@ -1,5 +1,6 @@
 """API do Pulse Analytics; serve métricas, dados sintéticos e previsão mensal."""
 from pathlib import Path
+import os
 import sys
 
 from fastapi import FastAPI, HTTPException, Query
@@ -10,10 +11,12 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA_PATH = ROOT / "dados" / "vendas.csv"
+FRONTEND_ORIGINS = [origin.strip() for origin in os.getenv("FRONTEND_ORIGINS", "").split(",") if origin.strip()]
 
 app = FastAPI(title="Pulse Analytics API", version="1.0.0", description="Dashboard de vendas com dados fictícios.")
 app.add_middleware(
     CORSMiddleware,
+    allow_origins=FRONTEND_ORIGINS,
     allow_origin_regex=r"^https?://(localhost|127\.0\.0\.1)(:\d+)?$",
     allow_methods=["*"],
     allow_headers=["*"],
