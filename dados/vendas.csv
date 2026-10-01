@@ -1,0 +1,608 @@
+pedido_id,data,cliente_id,segmento,categoria,produto,quantidade,preco_unitario,desconto,receita
+PA-000001,2024-01-01,C-1755,Conectado,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000002,2024-01-03,C-1031,Essencial,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000003,2024-01-06,C-1430,Essencial,Acessórios,Mochila Urban,1,329,0.1,296.1
+PA-000004,2024-01-08,C-1285,Essencial,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000005,2024-01-10,C-1368,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000006,2024-01-10,C-1748,Essencial,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000007,2024-01-10,C-1081,Conectado,Casa & Vida,Manta Nuvem,1,179,0.05,170.05
+PA-000008,2024-01-12,C-1047,Premium,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000009,2024-01-13,C-1390,Essencial,Casa & Vida,Garrafa Térmica,2,119,0.0,238.0
+PA-000010,2024-01-15,C-1687,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000011,2024-01-17,C-1547,Premium,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000012,2024-01-17,C-1277,Premium,Acessórios,Mochila Urban,1,329,0.05,312.55
+PA-000013,2024-01-18,C-1787,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000014,2024-01-18,C-1411,Essencial,Tecnologia,Teclado Mecânico,2,459,0.0,918.0
+PA-000015,2024-01-18,C-1736,Premium,Casa & Vida,Garrafa Térmica,1,119,0.1,107.1
+PA-000016,2024-01-20,C-1143,Conectado,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000017,2024-01-22,C-1409,Essencial,Casa & Vida,Manta Nuvem,1,179,0.1,161.1
+PA-000018,2024-01-24,C-1113,Essencial,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000019,2024-01-24,C-1611,Premium,Tecnologia,Teclado Mecânico,1,459,0.05,436.05
+PA-000020,2024-01-24,C-1542,Conectado,Tecnologia,Webcam Pro,1,349,0.05,331.55
+PA-000021,2024-01-24,C-1697,Premium,Casa & Vida,Manta Nuvem,2,179,0.0,358.0
+PA-000022,2024-01-25,C-1115,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000023,2024-01-29,C-1520,Conectado,Acessórios,Carteira Slim,3,149,0.0,447.0
+PA-000024,2024-01-30,C-1624,Conectado,Acessórios,Carteira Slim,2,149,0.1,268.2
+PA-000025,2024-01-30,C-1553,Premium,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000026,2024-01-31,C-1020,Conectado,Acessórios,Mochila Urban,1,329,0.05,312.55
+PA-000027,2024-01-31,C-1246,Conectado,Tecnologia,Hub USB-C,2,199,0.0,398.0
+PA-000028,2024-01-31,C-1088,Premium,Tecnologia,Teclado Mecânico,2,459,0.0,918.0
+PA-000029,2024-02-01,C-1563,Conectado,Tecnologia,Teclado Mecânico,1,459,0.05,436.05
+PA-000030,2024-02-04,C-1688,Conectado,Tecnologia,Teclado Mecânico,1,459,0.05,436.05
+PA-000031,2024-02-05,C-1231,Conectado,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000032,2024-02-09,C-1235,Premium,Tecnologia,Fone Studio,1,289,0.0,289.0
+PA-000033,2024-02-17,C-1417,Conectado,Acessórios,Óculos Solar,1,219,0.05,208.05
+PA-000034,2024-02-23,C-1063,Conectado,Acessórios,Óculos Solar,3,219,0.0,657.0
+PA-000035,2024-02-26,C-1144,Conectado,Tecnologia,Teclado Mecânico,1,459,0.05,436.05
+PA-000036,2024-02-26,C-1078,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000037,2024-02-28,C-1016,Conectado,Acessórios,Mochila Urban,1,329,0.1,296.1
+PA-000038,2024-02-28,C-1493,Essencial,Tecnologia,Teclado Mecânico,1,459,0.05,436.05
+PA-000039,2024-03-04,C-1678,Premium,Casa & Vida,Luminária Arc,1,249,0.1,224.1
+PA-000040,2024-03-04,C-1223,Essencial,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000041,2024-03-04,C-1052,Essencial,Tecnologia,Fone Studio,1,289,0.0,289.0
+PA-000042,2024-03-05,C-1083,Conectado,Acessórios,Óculos Solar,1,219,0.1,197.1
+PA-000043,2024-03-06,C-1414,Conectado,Tecnologia,Fone Studio,1,289,0.0,289.0
+PA-000044,2024-03-06,C-1635,Premium,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000045,2024-03-08,C-1210,Conectado,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000046,2024-03-09,C-1688,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000047,2024-03-10,C-1010,Essencial,Casa & Vida,Luminária Arc,2,249,0.0,498.0
+PA-000048,2024-03-12,C-1272,Conectado,Tecnologia,Fone Studio,1,289,0.1,260.1
+PA-000049,2024-03-12,C-1379,Premium,Tecnologia,Hub USB-C,2,199,0.0,398.0
+PA-000050,2024-03-12,C-1721,Premium,Casa & Vida,Garrafa Térmica,1,119,0.1,107.1
+PA-000051,2024-03-12,C-1009,Essencial,Casa & Vida,Manta Nuvem,3,179,0.1,483.3
+PA-000052,2024-03-13,C-1138,Essencial,Acessórios,Carteira Slim,2,149,0.0,298.0
+PA-000053,2024-03-15,C-1620,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000054,2024-03-15,C-1518,Essencial,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000055,2024-03-17,C-1046,Premium,Tecnologia,Fone Studio,1,289,0.0,289.0
+PA-000056,2024-03-17,C-1166,Conectado,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000057,2024-03-18,C-1115,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000058,2024-03-20,C-1566,Conectado,Tecnologia,Fone Studio,2,289,0.1,520.2
+PA-000059,2024-03-20,C-1374,Conectado,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000060,2024-03-21,C-1683,Essencial,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000061,2024-03-21,C-1636,Premium,Tecnologia,Hub USB-C,1,199,0.05,189.05
+PA-000062,2024-03-22,C-1423,Premium,Tecnologia,Teclado Mecânico,3,459,0.0,1377.0
+PA-000063,2024-03-24,C-1274,Premium,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000064,2024-03-26,C-1205,Conectado,Casa & Vida,Garrafa Térmica,2,119,0.0,238.0
+PA-000065,2024-03-27,C-1229,Conectado,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000066,2024-03-31,C-1696,Premium,Casa & Vida,Luminária Arc,1,249,0.05,236.55
+PA-000067,2024-03-31,C-1268,Conectado,Acessórios,Carteira Slim,2,149,0.0,298.0
+PA-000068,2024-04-02,C-1354,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.05,113.05
+PA-000069,2024-04-02,C-1119,Essencial,Acessórios,Carteira Slim,1,149,0.1,134.1
+PA-000070,2024-04-02,C-1726,Essencial,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000071,2024-04-05,C-1373,Conectado,Acessórios,Óculos Solar,2,219,0.0,438.0
+PA-000072,2024-04-07,C-1738,Premium,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000073,2024-04-07,C-1335,Conectado,Casa & Vida,Manta Nuvem,1,179,0.05,170.05
+PA-000074,2024-04-12,C-1583,Conectado,Acessórios,Óculos Solar,2,219,0.1,394.2
+PA-000075,2024-04-12,C-1312,Conectado,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000076,2024-04-15,C-1692,Conectado,Acessórios,Carteira Slim,1,149,0.05,141.55
+PA-000077,2024-04-18,C-1528,Premium,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000078,2024-04-18,C-1770,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000079,2024-04-21,C-1626,Conectado,Tecnologia,Fone Studio,1,289,0.05,274.55
+PA-000080,2024-04-22,C-1200,Essencial,Tecnologia,Webcam Pro,1,349,0.1,314.1
+PA-000081,2024-04-22,C-1250,Conectado,Acessórios,Óculos Solar,1,219,0.05,208.05
+PA-000082,2024-04-24,C-1476,Essencial,Tecnologia,Webcam Pro,1,349,0.1,314.1
+PA-000083,2024-04-27,C-1573,Premium,Casa & Vida,Garrafa Térmica,1,119,0.1,107.1
+PA-000084,2024-04-27,C-1628,Conectado,Acessórios,Carteira Slim,2,149,0.05,283.1
+PA-000085,2024-04-28,C-1457,Conectado,Acessórios,Carteira Slim,2,149,0.1,268.2
+PA-000086,2024-04-29,C-1653,Premium,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000087,2024-04-29,C-1282,Essencial,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000088,2024-05-01,C-1083,Conectado,Tecnologia,Hub USB-C,1,199,0.1,179.1
+PA-000089,2024-05-04,C-1339,Premium,Acessórios,Mochila Urban,1,329,0.05,312.55
+PA-000090,2024-05-09,C-1390,Essencial,Acessórios,Óculos Solar,1,219,0.1,197.1
+PA-000091,2024-05-09,C-1772,Conectado,Casa & Vida,Garrafa Térmica,2,119,0.0,238.0
+PA-000092,2024-05-11,C-1618,Essencial,Casa & Vida,Manta Nuvem,1,179,0.1,161.1
+PA-000093,2024-05-11,C-1498,Conectado,Tecnologia,Webcam Pro,1,349,0.05,331.55
+PA-000094,2024-05-14,C-1131,Premium,Casa & Vida,Manta Nuvem,1,179,0.05,170.05
+PA-000095,2024-05-15,C-1578,Essencial,Acessórios,Mochila Urban,2,329,0.1,592.2
+PA-000096,2024-05-15,C-1139,Essencial,Acessórios,Mochila Urban,1,329,0.05,312.55
+PA-000097,2024-05-15,C-1336,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.05,113.05
+PA-000098,2024-05-18,C-1259,Premium,Casa & Vida,Luminária Arc,1,249,0.05,236.55
+PA-000099,2024-05-19,C-1359,Premium,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000100,2024-05-19,C-1773,Conectado,Tecnologia,Fone Studio,1,289,0.0,289.0
+PA-000101,2024-05-22,C-1686,Essencial,Acessórios,Mochila Urban,1,329,0.05,312.55
+PA-000102,2024-05-22,C-1786,Essencial,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000103,2024-05-24,C-1319,Premium,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000104,2024-05-28,C-1078,Conectado,Casa & Vida,Luminária Arc,2,249,0.0,498.0
+PA-000105,2024-05-29,C-1701,Essencial,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000106,2024-05-30,C-1678,Premium,Tecnologia,Fone Studio,1,289,0.05,274.55
+PA-000107,2024-06-03,C-1651,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000108,2024-06-03,C-1752,Conectado,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000109,2024-06-05,C-1447,Premium,Acessórios,Óculos Solar,1,219,0.05,208.05
+PA-000110,2024-06-06,C-1089,Premium,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000111,2024-06-09,C-1030,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000112,2024-06-16,C-1088,Premium,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000113,2024-06-22,C-1415,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000114,2024-06-23,C-1567,Conectado,Casa & Vida,Manta Nuvem,1,179,0.05,170.05
+PA-000115,2024-06-26,C-1314,Conectado,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000116,2024-07-02,C-1284,Essencial,Tecnologia,Teclado Mecânico,1,459,0.05,436.05
+PA-000117,2024-07-03,C-1199,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000118,2024-07-07,C-1567,Conectado,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000119,2024-07-09,C-1588,Conectado,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000120,2024-07-09,C-1189,Conectado,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000121,2024-07-10,C-1411,Essencial,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000122,2024-07-10,C-1156,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000123,2024-07-10,C-1122,Conectado,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000124,2024-07-13,C-1462,Conectado,Acessórios,Mochila Urban,1,329,0.05,312.55
+PA-000125,2024-07-14,C-1583,Conectado,Casa & Vida,Manta Nuvem,3,179,0.0,537.0
+PA-000126,2024-07-14,C-1782,Premium,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000127,2024-07-17,C-1161,Essencial,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000128,2024-07-20,C-1720,Premium,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000129,2024-07-21,C-1678,Premium,Tecnologia,Teclado Mecânico,2,459,0.1,826.2
+PA-000130,2024-07-21,C-1664,Essencial,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000131,2024-07-26,C-1450,Essencial,Acessórios,Óculos Solar,2,219,0.0,438.0
+PA-000132,2024-07-28,C-1553,Premium,Acessórios,Carteira Slim,2,149,0.1,268.2
+PA-000133,2024-08-05,C-1591,Premium,Acessórios,Óculos Solar,2,219,0.0,438.0
+PA-000134,2024-08-05,C-1285,Essencial,Tecnologia,Teclado Mecânico,1,459,0.05,436.05
+PA-000135,2024-08-05,C-1094,Essencial,Tecnologia,Webcam Pro,1,349,0.05,331.55
+PA-000136,2024-08-13,C-1323,Essencial,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000137,2024-08-16,C-1474,Essencial,Acessórios,Mochila Urban,1,329,0.1,296.1
+PA-000138,2024-08-20,C-1274,Premium,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000139,2024-08-22,C-1646,Conectado,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000140,2024-08-22,C-1565,Conectado,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000141,2024-08-26,C-1511,Premium,Tecnologia,Webcam Pro,2,349,0.0,698.0
+PA-000142,2024-08-26,C-1426,Premium,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000143,2024-08-27,C-1393,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000144,2024-08-27,C-1792,Conectado,Tecnologia,Teclado Mecânico,2,459,0.0,918.0
+PA-000145,2024-08-28,C-1274,Premium,Casa & Vida,Luminária Arc,2,249,0.1,448.2
+PA-000146,2024-08-29,C-1594,Premium,Casa & Vida,Manta Nuvem,1,179,0.1,161.1
+PA-000147,2024-08-30,C-1354,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.05,113.05
+PA-000148,2024-08-30,C-1467,Premium,Casa & Vida,Manta Nuvem,1,179,0.05,170.05
+PA-000149,2024-08-30,C-1586,Conectado,Casa & Vida,Garrafa Térmica,3,119,0.0,357.0
+PA-000150,2024-08-30,C-1045,Premium,Casa & Vida,Garrafa Térmica,2,119,0.05,226.1
+PA-000151,2024-09-02,C-1508,Premium,Casa & Vida,Luminária Arc,3,249,0.0,747.0
+PA-000152,2024-09-02,C-1340,Premium,Tecnologia,Teclado Mecânico,1,459,0.1,413.1
+PA-000153,2024-09-03,C-1016,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.05,113.05
+PA-000154,2024-09-03,C-1077,Essencial,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000155,2024-09-05,C-1337,Premium,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000156,2024-09-05,C-1642,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000157,2024-09-05,C-1633,Premium,Acessórios,Carteira Slim,2,149,0.0,298.0
+PA-000158,2024-09-07,C-1101,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.05,113.05
+PA-000159,2024-09-08,C-1030,Essencial,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000160,2024-09-10,C-1251,Conectado,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000161,2024-09-12,C-1392,Essencial,Tecnologia,Teclado Mecânico,1,459,0.1,413.1
+PA-000162,2024-09-13,C-1238,Premium,Tecnologia,Webcam Pro,2,349,0.0,698.0
+PA-000163,2024-09-18,C-1453,Essencial,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000164,2024-09-19,C-1707,Essencial,Acessórios,Carteira Slim,1,149,0.05,141.55
+PA-000165,2024-09-19,C-1394,Conectado,Casa & Vida,Luminária Arc,2,249,0.0,498.0
+PA-000166,2024-09-20,C-1589,Premium,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000167,2024-09-20,C-1282,Essencial,Casa & Vida,Manta Nuvem,1,179,0.05,170.05
+PA-000168,2024-09-22,C-1294,Conectado,Acessórios,Mochila Urban,2,329,0.05,625.1
+PA-000169,2024-09-22,C-1636,Premium,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000170,2024-09-24,C-1643,Essencial,Acessórios,Óculos Solar,2,219,0.0,438.0
+PA-000171,2024-09-25,C-1750,Conectado,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000172,2024-09-27,C-1136,Essencial,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000173,2024-09-27,C-1169,Premium,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000174,2024-09-29,C-1118,Essencial,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000175,2024-10-02,C-1375,Conectado,Tecnologia,Webcam Pro,2,349,0.1,628.2
+PA-000176,2024-10-08,C-1111,Premium,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000177,2024-10-09,C-1336,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.1,107.1
+PA-000178,2024-10-10,C-1718,Premium,Tecnologia,Fone Studio,1,289,0.05,274.55
+PA-000179,2024-10-10,C-1047,Premium,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000180,2024-10-11,C-1551,Premium,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000181,2024-10-11,C-1430,Essencial,Tecnologia,Webcam Pro,1,349,0.1,314.1
+PA-000182,2024-10-12,C-1502,Conectado,Acessórios,Mochila Urban,2,329,0.0,658.0
+PA-000183,2024-10-13,C-1455,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000184,2024-10-17,C-1063,Conectado,Casa & Vida,Manta Nuvem,2,179,0.0,358.0
+PA-000185,2024-10-17,C-1466,Premium,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000186,2024-10-17,C-1022,Premium,Tecnologia,Teclado Mecânico,1,459,0.1,413.1
+PA-000187,2024-10-20,C-1213,Premium,Acessórios,Mochila Urban,1,329,0.1,296.1
+PA-000188,2024-10-20,C-1337,Premium,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000189,2024-10-20,C-1134,Essencial,Tecnologia,Fone Studio,1,289,0.0,289.0
+PA-000190,2024-10-22,C-1244,Essencial,Tecnologia,Fone Studio,1,289,0.0,289.0
+PA-000191,2024-10-23,C-1760,Premium,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000192,2024-10-29,C-1045,Premium,Casa & Vida,Manta Nuvem,1,179,0.1,161.1
+PA-000193,2024-10-30,C-1063,Conectado,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000194,2024-10-31,C-1730,Conectado,Casa & Vida,Luminária Arc,1,249,0.05,236.55
+PA-000195,2024-10-31,C-1623,Essencial,Casa & Vida,Garrafa Térmica,2,119,0.0,238.0
+PA-000196,2024-10-31,C-1649,Conectado,Tecnologia,Fone Studio,1,289,0.1,260.1
+PA-000197,2024-10-31,C-1612,Premium,Acessórios,Óculos Solar,1,219,0.05,208.05
+PA-000198,2024-11-01,C-1719,Premium,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000199,2024-11-02,C-1739,Premium,Acessórios,Óculos Solar,2,219,0.1,394.2
+PA-000200,2024-11-03,C-1348,Essencial,Casa & Vida,Luminária Arc,2,249,0.05,473.1
+PA-000201,2024-11-03,C-1321,Premium,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000202,2024-11-03,C-1157,Essencial,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000203,2024-11-04,C-1096,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000204,2024-11-04,C-1134,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000205,2024-11-05,C-1421,Premium,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000206,2024-11-06,C-1295,Premium,Acessórios,Carteira Slim,2,149,0.0,298.0
+PA-000207,2024-11-07,C-1159,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000208,2024-11-07,C-1359,Premium,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000209,2024-11-08,C-1232,Premium,Casa & Vida,Garrafa Térmica,1,119,0.1,107.1
+PA-000210,2024-11-08,C-1629,Conectado,Casa & Vida,Manta Nuvem,3,179,0.1,483.3
+PA-000211,2024-11-08,C-1674,Premium,Acessórios,Óculos Solar,1,219,0.1,197.1
+PA-000212,2024-11-09,C-1348,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000213,2024-11-09,C-1580,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000214,2024-11-10,C-1094,Essencial,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000215,2024-11-10,C-1465,Premium,Acessórios,Óculos Solar,1,219,0.05,208.05
+PA-000216,2024-11-11,C-1611,Premium,Casa & Vida,Luminária Arc,1,249,0.1,224.1
+PA-000217,2024-11-12,C-1051,Essencial,Tecnologia,Teclado Mecânico,1,459,0.1,413.1
+PA-000218,2024-11-13,C-1622,Essencial,Casa & Vida,Luminária Arc,1,249,0.05,236.55
+PA-000219,2024-11-13,C-1117,Essencial,Casa & Vida,Luminária Arc,1,249,0.1,224.1
+PA-000220,2024-11-14,C-1499,Conectado,Tecnologia,Hub USB-C,1,199,0.1,179.1
+PA-000221,2024-11-15,C-1057,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.1,107.1
+PA-000222,2024-11-16,C-1297,Premium,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000223,2024-11-17,C-1133,Premium,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000224,2024-11-18,C-1074,Essencial,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000225,2024-11-19,C-1080,Conectado,Acessórios,Mochila Urban,1,329,0.05,312.55
+PA-000226,2024-11-20,C-1297,Premium,Acessórios,Carteira Slim,1,149,0.05,141.55
+PA-000227,2024-11-20,C-1176,Essencial,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000228,2024-11-20,C-1091,Premium,Acessórios,Carteira Slim,2,149,0.0,298.0
+PA-000229,2024-11-21,C-1537,Essencial,Tecnologia,Teclado Mecânico,1,459,0.05,436.05
+PA-000230,2024-11-22,C-1798,Conectado,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000231,2024-11-23,C-1199,Essencial,Acessórios,Óculos Solar,1,219,0.1,197.1
+PA-000232,2024-11-24,C-1242,Essencial,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000233,2024-11-24,C-1617,Essencial,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000234,2024-11-24,C-1476,Essencial,Tecnologia,Fone Studio,1,289,0.05,274.55
+PA-000235,2024-11-25,C-1659,Essencial,Acessórios,Carteira Slim,1,149,0.1,134.1
+PA-000236,2024-11-25,C-1155,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000237,2024-11-26,C-1606,Conectado,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000238,2024-11-27,C-1039,Conectado,Acessórios,Mochila Urban,1,329,0.05,312.55
+PA-000239,2024-11-28,C-1630,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000240,2024-11-29,C-1461,Conectado,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000241,2024-11-29,C-1488,Premium,Acessórios,Óculos Solar,1,219,0.1,197.1
+PA-000242,2024-11-30,C-1732,Conectado,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000243,2024-12-01,C-1450,Essencial,Acessórios,Mochila Urban,1,329,0.05,312.55
+PA-000244,2024-12-02,C-1397,Conectado,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000245,2024-12-03,C-1068,Premium,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000246,2024-12-04,C-1742,Premium,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000247,2024-12-05,C-1680,Essencial,Acessórios,Mochila Urban,1,329,0.1,296.1
+PA-000248,2024-12-05,C-1133,Premium,Tecnologia,Hub USB-C,1,199,0.05,189.05
+PA-000249,2024-12-05,C-1573,Premium,Acessórios,Óculos Solar,2,219,0.0,438.0
+PA-000250,2024-12-06,C-1096,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.1,107.1
+PA-000251,2024-12-07,C-1317,Premium,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000252,2024-12-07,C-1197,Essencial,Tecnologia,Teclado Mecânico,1,459,0.05,436.05
+PA-000253,2024-12-08,C-1520,Conectado,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000254,2024-12-09,C-1785,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000255,2024-12-09,C-1167,Conectado,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000256,2024-12-10,C-1739,Premium,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000257,2024-12-11,C-1455,Essencial,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000258,2024-12-12,C-1317,Premium,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000259,2024-12-12,C-1452,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.1,107.1
+PA-000260,2024-12-13,C-1166,Conectado,Casa & Vida,Luminária Arc,1,249,0.05,236.55
+PA-000261,2024-12-14,C-1657,Premium,Acessórios,Mochila Urban,2,329,0.0,658.0
+PA-000262,2024-12-14,C-1729,Conectado,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000263,2024-12-15,C-1280,Premium,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000264,2024-12-15,C-1094,Essencial,Casa & Vida,Manta Nuvem,1,179,0.05,170.05
+PA-000265,2024-12-15,C-1425,Premium,Tecnologia,Webcam Pro,2,349,0.0,698.0
+PA-000266,2024-12-16,C-1384,Premium,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000267,2024-12-17,C-1150,Premium,Casa & Vida,Garrafa Térmica,2,119,0.0,238.0
+PA-000268,2024-12-18,C-1778,Premium,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000269,2024-12-19,C-1020,Conectado,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000270,2024-12-19,C-1745,Essencial,Casa & Vida,Garrafa Térmica,2,119,0.1,214.2
+PA-000271,2024-12-20,C-1309,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000272,2024-12-20,C-1469,Premium,Tecnologia,Fone Studio,1,289,0.1,260.1
+PA-000273,2024-12-21,C-1589,Premium,Casa & Vida,Manta Nuvem,1,179,0.1,161.1
+PA-000274,2024-12-22,C-1362,Premium,Tecnologia,Hub USB-C,1,199,0.1,179.1
+PA-000275,2024-12-23,C-1537,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000276,2024-12-24,C-1045,Premium,Tecnologia,Fone Studio,1,289,0.05,274.55
+PA-000277,2024-12-24,C-1766,Essencial,Acessórios,Carteira Slim,3,149,0.0,447.0
+PA-000278,2024-12-24,C-1247,Conectado,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000279,2024-12-24,C-1753,Conectado,Acessórios,Óculos Solar,1,219,0.1,197.1
+PA-000280,2024-12-25,C-1659,Essencial,Tecnologia,Fone Studio,1,289,0.0,289.0
+PA-000281,2024-12-25,C-1647,Conectado,Tecnologia,Webcam Pro,3,349,0.05,994.65
+PA-000282,2024-12-26,C-1038,Conectado,Tecnologia,Fone Studio,1,289,0.05,274.55
+PA-000283,2024-12-27,C-1318,Premium,Tecnologia,Teclado Mecânico,2,459,0.0,918.0
+PA-000284,2024-12-28,C-1293,Conectado,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000285,2024-12-29,C-1448,Premium,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000286,2024-12-30,C-1348,Essencial,Acessórios,Carteira Slim,2,149,0.05,283.1
+PA-000287,2024-12-30,C-1532,Premium,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000288,2024-12-30,C-1441,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000289,2024-12-31,C-1336,Conectado,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000290,2024-12-31,C-1735,Conectado,Acessórios,Carteira Slim,1,149,0.1,134.1
+PA-000291,2025-01-02,C-1630,Conectado,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000292,2025-01-03,C-1077,Essencial,Casa & Vida,Manta Nuvem,3,179,0.0,537.0
+PA-000293,2025-01-03,C-1768,Essencial,Acessórios,Óculos Solar,1,219,0.1,197.1
+PA-000294,2025-01-03,C-1623,Essencial,Acessórios,Mochila Urban,2,329,0.0,658.0
+PA-000295,2025-01-03,C-1242,Essencial,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000296,2025-01-04,C-1034,Essencial,Casa & Vida,Luminária Arc,1,249,0.1,224.1
+PA-000297,2025-01-05,C-1455,Essencial,Acessórios,Carteira Slim,2,149,0.0,298.0
+PA-000298,2025-01-06,C-1322,Premium,Acessórios,Mochila Urban,1,329,0.05,312.55
+PA-000299,2025-01-07,C-1512,Essencial,Tecnologia,Fone Studio,1,289,0.0,289.0
+PA-000300,2025-01-09,C-1220,Essencial,Tecnologia,Hub USB-C,1,199,0.05,189.05
+PA-000301,2025-01-09,C-1205,Conectado,Acessórios,Carteira Slim,1,149,0.05,141.55
+PA-000302,2025-01-11,C-1090,Premium,Casa & Vida,Garrafa Térmica,2,119,0.05,226.1
+PA-000303,2025-01-11,C-1564,Conectado,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000304,2025-01-13,C-1230,Conectado,Tecnologia,Teclado Mecânico,1,459,0.1,413.1
+PA-000305,2025-01-13,C-1506,Premium,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000306,2025-01-17,C-1068,Premium,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000307,2025-01-19,C-1589,Premium,Acessórios,Carteira Slim,1,149,0.05,141.55
+PA-000308,2025-01-19,C-1461,Conectado,Tecnologia,Teclado Mecânico,3,459,0.0,1377.0
+PA-000309,2025-01-19,C-1799,Premium,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000310,2025-01-19,C-1444,Premium,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000311,2025-01-21,C-1331,Conectado,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000312,2025-01-21,C-1291,Conectado,Acessórios,Mochila Urban,1,329,0.1,296.1
+PA-000313,2025-01-22,C-1282,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.1,107.1
+PA-000314,2025-01-22,C-1515,Essencial,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000315,2025-01-23,C-1738,Premium,Acessórios,Óculos Solar,1,219,0.1,197.1
+PA-000316,2025-01-24,C-1084,Conectado,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000317,2025-01-24,C-1427,Premium,Tecnologia,Hub USB-C,1,199,0.1,179.1
+PA-000318,2025-01-25,C-1297,Premium,Tecnologia,Webcam Pro,2,349,0.1,628.2
+PA-000319,2025-01-26,C-1305,Essencial,Casa & Vida,Luminária Arc,1,249,0.05,236.55
+PA-000320,2025-01-28,C-1209,Conectado,Tecnologia,Webcam Pro,1,349,0.05,331.55
+PA-000321,2025-01-31,C-1409,Essencial,Casa & Vida,Manta Nuvem,3,179,0.0,537.0
+PA-000322,2025-01-31,C-1327,Essencial,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000323,2025-02-06,C-1336,Conectado,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000324,2025-02-06,C-1511,Premium,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000325,2025-02-07,C-1024,Premium,Casa & Vida,Luminária Arc,2,249,0.05,473.1
+PA-000326,2025-02-07,C-1221,Essencial,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000327,2025-02-07,C-1507,Premium,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000328,2025-02-07,C-1550,Premium,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000329,2025-02-16,C-1517,Essencial,Casa & Vida,Manta Nuvem,1,179,0.05,170.05
+PA-000330,2025-02-19,C-1100,Conectado,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000331,2025-02-21,C-1204,Conectado,Casa & Vida,Manta Nuvem,2,179,0.0,358.0
+PA-000332,2025-02-22,C-1141,Conectado,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000333,2025-02-23,C-1528,Premium,Casa & Vida,Manta Nuvem,1,179,0.1,161.1
+PA-000334,2025-02-25,C-1758,Premium,Casa & Vida,Garrafa Térmica,1,119,0.1,107.1
+PA-000335,2025-02-25,C-1546,Conectado,Casa & Vida,Manta Nuvem,1,179,0.1,161.1
+PA-000336,2025-02-27,C-1427,Premium,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000337,2025-02-28,C-1486,Premium,Acessórios,Óculos Solar,1,219,0.1,197.1
+PA-000338,2025-03-02,C-1598,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000339,2025-03-05,C-1033,Essencial,Casa & Vida,Garrafa Térmica,2,119,0.0,238.0
+PA-000340,2025-03-06,C-1322,Premium,Acessórios,Mochila Urban,1,329,0.05,312.55
+PA-000341,2025-03-11,C-1532,Premium,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000342,2025-03-14,C-1471,Essencial,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000343,2025-03-15,C-1625,Conectado,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000344,2025-03-15,C-1572,Premium,Casa & Vida,Garrafa Térmica,2,119,0.0,238.0
+PA-000345,2025-03-17,C-1325,Essencial,Casa & Vida,Luminária Arc,1,249,0.05,236.55
+PA-000346,2025-03-17,C-1295,Premium,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000347,2025-03-19,C-1298,Premium,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000348,2025-03-21,C-1766,Essencial,Tecnologia,Hub USB-C,2,199,0.0,398.0
+PA-000349,2025-03-21,C-1278,Premium,Casa & Vida,Garrafa Térmica,1,119,0.1,107.1
+PA-000350,2025-03-21,C-1631,Premium,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000351,2025-03-22,C-1232,Premium,Tecnologia,Teclado Mecânico,1,459,0.1,413.1
+PA-000352,2025-03-23,C-1103,Conectado,Tecnologia,Fone Studio,1,289,0.05,274.55
+PA-000353,2025-03-24,C-1417,Conectado,Tecnologia,Fone Studio,2,289,0.0,578.0
+PA-000354,2025-03-25,C-1329,Essencial,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000355,2025-03-28,C-1180,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000356,2025-03-30,C-1767,Essencial,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000357,2025-03-30,C-1618,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.1,107.1
+PA-000358,2025-04-01,C-1537,Essencial,Casa & Vida,Luminária Arc,3,249,0.1,672.3
+PA-000359,2025-04-01,C-1280,Premium,Casa & Vida,Garrafa Térmica,2,119,0.05,226.1
+PA-000360,2025-04-01,C-1664,Essencial,Tecnologia,Fone Studio,1,289,0.05,274.55
+PA-000361,2025-04-04,C-1180,Essencial,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000362,2025-04-05,C-1336,Conectado,Acessórios,Carteira Slim,2,149,0.1,268.2
+PA-000363,2025-04-07,C-1007,Premium,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000364,2025-04-10,C-1012,Essencial,Casa & Vida,Luminária Arc,1,249,0.1,224.1
+PA-000365,2025-04-14,C-1721,Premium,Casa & Vida,Luminária Arc,1,249,0.1,224.1
+PA-000366,2025-04-15,C-1377,Conectado,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000367,2025-04-16,C-1766,Essencial,Tecnologia,Teclado Mecânico,1,459,0.05,436.05
+PA-000368,2025-04-17,C-1776,Conectado,Casa & Vida,Luminária Arc,1,249,0.05,236.55
+PA-000369,2025-04-17,C-1697,Premium,Acessórios,Óculos Solar,2,219,0.0,438.0
+PA-000370,2025-04-17,C-1721,Premium,Acessórios,Mochila Urban,1,329,0.1,296.1
+PA-000371,2025-04-19,C-1208,Conectado,Tecnologia,Fone Studio,2,289,0.1,520.2
+PA-000372,2025-04-19,C-1533,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000373,2025-04-21,C-1457,Conectado,Acessórios,Óculos Solar,1,219,0.1,197.1
+PA-000374,2025-04-22,C-1578,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.05,113.05
+PA-000375,2025-04-25,C-1764,Essencial,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000376,2025-04-29,C-1484,Premium,Acessórios,Mochila Urban,2,329,0.0,658.0
+PA-000377,2025-05-02,C-1384,Premium,Acessórios,Óculos Solar,1,219,0.05,208.05
+PA-000378,2025-05-03,C-1385,Premium,Casa & Vida,Luminária Arc,2,249,0.05,473.1
+PA-000379,2025-05-03,C-1122,Conectado,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000380,2025-05-03,C-1004,Premium,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000381,2025-05-03,C-1435,Conectado,Tecnologia,Hub USB-C,1,199,0.1,179.1
+PA-000382,2025-05-05,C-1194,Premium,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000383,2025-05-06,C-1630,Conectado,Acessórios,Mochila Urban,1,329,0.05,312.55
+PA-000384,2025-05-06,C-1609,Conectado,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000385,2025-05-08,C-1412,Essencial,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000386,2025-05-11,C-1240,Essencial,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000387,2025-05-12,C-1792,Conectado,Acessórios,Óculos Solar,1,219,0.1,197.1
+PA-000388,2025-05-13,C-1677,Premium,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000389,2025-05-18,C-1570,Premium,Acessórios,Mochila Urban,1,329,0.05,312.55
+PA-000390,2025-05-20,C-1327,Essencial,Acessórios,Óculos Solar,1,219,0.1,197.1
+PA-000391,2025-05-20,C-1386,Essencial,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000392,2025-05-20,C-1308,Essencial,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000393,2025-05-21,C-1423,Premium,Tecnologia,Webcam Pro,2,349,0.1,628.2
+PA-000394,2025-05-21,C-1249,Conectado,Casa & Vida,Manta Nuvem,1,179,0.05,170.05
+PA-000395,2025-05-28,C-1618,Essencial,Tecnologia,Hub USB-C,1,199,0.1,179.1
+PA-000396,2025-05-31,C-1491,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000397,2025-06-02,C-1760,Premium,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000398,2025-06-02,C-1721,Premium,Tecnologia,Webcam Pro,2,349,0.1,628.2
+PA-000399,2025-06-04,C-1478,Conectado,Acessórios,Carteira Slim,1,149,0.05,141.55
+PA-000400,2025-06-04,C-1369,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000401,2025-06-08,C-1321,Premium,Casa & Vida,Luminária Arc,2,249,0.0,498.0
+PA-000402,2025-06-08,C-1760,Premium,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000403,2025-06-08,C-1594,Premium,Tecnologia,Fone Studio,1,289,0.1,260.1
+PA-000404,2025-06-09,C-1389,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000405,2025-06-10,C-1264,Essencial,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000406,2025-06-11,C-1472,Essencial,Casa & Vida,Manta Nuvem,1,179,0.05,170.05
+PA-000407,2025-06-13,C-1189,Conectado,Tecnologia,Teclado Mecânico,1,459,0.05,436.05
+PA-000408,2025-06-14,C-1035,Essencial,Acessórios,Óculos Solar,2,219,0.1,394.2
+PA-000409,2025-06-14,C-1141,Conectado,Tecnologia,Fone Studio,1,289,0.05,274.55
+PA-000410,2025-06-15,C-1224,Essencial,Tecnologia,Fone Studio,1,289,0.0,289.0
+PA-000411,2025-06-15,C-1654,Premium,Acessórios,Carteira Slim,1,149,0.1,134.1
+PA-000412,2025-06-16,C-1007,Premium,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000413,2025-06-20,C-1184,Conectado,Acessórios,Carteira Slim,1,149,0.05,141.55
+PA-000414,2025-06-26,C-1471,Essencial,Casa & Vida,Luminária Arc,1,249,0.05,236.55
+PA-000415,2025-06-27,C-1670,Conectado,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000416,2025-06-28,C-1387,Essencial,Acessórios,Mochila Urban,1,329,0.05,312.55
+PA-000417,2025-06-28,C-1720,Premium,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000418,2025-06-28,C-1661,Essencial,Tecnologia,Fone Studio,1,289,0.05,274.55
+PA-000419,2025-06-28,C-1541,Conectado,Casa & Vida,Manta Nuvem,3,179,0.0,537.0
+PA-000420,2025-06-29,C-1487,Premium,Tecnologia,Teclado Mecânico,2,459,0.1,826.2
+PA-000421,2025-06-29,C-1557,Essencial,Casa & Vida,Garrafa Térmica,2,119,0.0,238.0
+PA-000422,2025-06-30,C-1017,Conectado,Tecnologia,Teclado Mecânico,2,459,0.0,918.0
+PA-000423,2025-07-01,C-1079,Conectado,Acessórios,Mochila Urban,1,329,0.05,312.55
+PA-000424,2025-07-01,C-1399,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.1,107.1
+PA-000425,2025-07-01,C-1706,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000426,2025-07-02,C-1101,Conectado,Acessórios,Óculos Solar,3,219,0.0,657.0
+PA-000427,2025-07-04,C-1407,Essencial,Casa & Vida,Manta Nuvem,1,179,0.1,161.1
+PA-000428,2025-07-04,C-1503,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.05,113.05
+PA-000429,2025-07-09,C-1253,Premium,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000430,2025-07-10,C-1758,Premium,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000431,2025-07-14,C-1136,Essencial,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000432,2025-07-14,C-1569,Premium,Tecnologia,Teclado Mecânico,1,459,0.1,413.1
+PA-000433,2025-07-19,C-1398,Conectado,Casa & Vida,Luminária Arc,1,249,0.05,236.55
+PA-000434,2025-07-20,C-1586,Conectado,Acessórios,Óculos Solar,2,219,0.0,438.0
+PA-000435,2025-07-22,C-1505,Premium,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000436,2025-07-27,C-1609,Conectado,Casa & Vida,Luminária Arc,2,249,0.05,473.1
+PA-000437,2025-07-28,C-1406,Premium,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000438,2025-07-30,C-1140,Essencial,Casa & Vida,Luminária Arc,1,249,0.1,224.1
+PA-000439,2025-08-01,C-1408,Essencial,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000440,2025-08-02,C-1590,Premium,Casa & Vida,Manta Nuvem,1,179,0.05,170.05
+PA-000441,2025-08-02,C-1374,Conectado,Tecnologia,Hub USB-C,1,199,0.05,189.05
+PA-000442,2025-08-02,C-1185,Conectado,Tecnologia,Teclado Mecânico,1,459,0.1,413.1
+PA-000443,2025-08-03,C-1726,Essencial,Acessórios,Mochila Urban,2,329,0.05,625.1
+PA-000444,2025-08-05,C-1690,Conectado,Acessórios,Mochila Urban,1,329,0.05,312.55
+PA-000445,2025-08-07,C-1387,Essencial,Tecnologia,Hub USB-C,1,199,0.05,189.05
+PA-000446,2025-08-09,C-1709,Conectado,Casa & Vida,Manta Nuvem,1,179,0.1,161.1
+PA-000447,2025-08-09,C-1719,Premium,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000448,2025-08-09,C-1112,Premium,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000449,2025-08-09,C-1046,Premium,Tecnologia,Hub USB-C,1,199,0.1,179.1
+PA-000450,2025-08-10,C-1441,Conectado,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000451,2025-08-14,C-1457,Conectado,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000452,2025-08-17,C-1495,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000453,2025-08-20,C-1467,Premium,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000454,2025-08-20,C-1449,Essencial,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000455,2025-08-20,C-1308,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000456,2025-08-22,C-1759,Premium,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000457,2025-08-27,C-1656,Premium,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000458,2025-08-27,C-1203,Essencial,Acessórios,Carteira Slim,1,149,0.1,134.1
+PA-000459,2025-08-27,C-1722,Essencial,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000460,2025-08-30,C-1192,Premium,Tecnologia,Fone Studio,1,289,0.1,260.1
+PA-000461,2025-09-03,C-1612,Premium,Casa & Vida,Manta Nuvem,2,179,0.0,358.0
+PA-000462,2025-09-10,C-1321,Premium,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000463,2025-09-14,C-1589,Premium,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000464,2025-09-17,C-1569,Premium,Acessórios,Óculos Solar,2,219,0.0,438.0
+PA-000465,2025-09-21,C-1497,Essencial,Acessórios,Mochila Urban,2,329,0.0,658.0
+PA-000466,2025-09-21,C-1518,Essencial,Tecnologia,Teclado Mecânico,1,459,0.1,413.1
+PA-000467,2025-09-22,C-1501,Conectado,Casa & Vida,Manta Nuvem,1,179,0.05,170.05
+PA-000468,2025-09-24,C-1551,Premium,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000469,2025-09-26,C-1563,Conectado,Acessórios,Óculos Solar,1,219,0.05,208.05
+PA-000470,2025-09-28,C-1556,Essencial,Casa & Vida,Manta Nuvem,2,179,0.0,358.0
+PA-000471,2025-09-29,C-1105,Conectado,Tecnologia,Webcam Pro,1,349,0.05,331.55
+PA-000472,2025-09-30,C-1461,Conectado,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000473,2025-10-02,C-1795,Conectado,Tecnologia,Webcam Pro,2,349,0.0,698.0
+PA-000474,2025-10-02,C-1706,Essencial,Tecnologia,Teclado Mecânico,1,459,0.1,413.1
+PA-000475,2025-10-04,C-1212,Premium,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000476,2025-10-05,C-1552,Premium,Tecnologia,Hub USB-C,1,199,0.1,179.1
+PA-000477,2025-10-07,C-1696,Premium,Casa & Vida,Luminária Arc,1,249,0.1,224.1
+PA-000478,2025-10-07,C-1061,Conectado,Tecnologia,Teclado Mecânico,2,459,0.05,872.1
+PA-000479,2025-10-07,C-1256,Premium,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000480,2025-10-11,C-1643,Essencial,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000481,2025-10-11,C-1413,Essencial,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000482,2025-10-14,C-1596,Essencial,Casa & Vida,Luminária Arc,2,249,0.0,498.0
+PA-000483,2025-10-14,C-1651,Conectado,Tecnologia,Fone Studio,1,289,0.05,274.55
+PA-000484,2025-10-15,C-1224,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.05,113.05
+PA-000485,2025-10-16,C-1346,Essencial,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000486,2025-10-16,C-1352,Conectado,Acessórios,Óculos Solar,1,219,0.05,208.05
+PA-000487,2025-10-16,C-1017,Conectado,Acessórios,Mochila Urban,1,329,0.05,312.55
+PA-000488,2025-10-18,C-1208,Conectado,Casa & Vida,Luminária Arc,1,249,0.05,236.55
+PA-000489,2025-10-18,C-1163,Conectado,Acessórios,Mochila Urban,2,329,0.0,658.0
+PA-000490,2025-10-19,C-1085,Premium,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000491,2025-10-19,C-1054,Essencial,Casa & Vida,Manta Nuvem,2,179,0.0,358.0
+PA-000492,2025-10-22,C-1002,Premium,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000493,2025-10-25,C-1713,Conectado,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000494,2025-10-28,C-1393,Conectado,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000495,2025-10-28,C-1307,Essencial,Tecnologia,Fone Studio,1,289,0.0,289.0
+PA-000496,2025-10-30,C-1009,Essencial,Tecnologia,Teclado Mecânico,1,459,0.1,413.1
+PA-000497,2025-10-31,C-1644,Essencial,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000498,2025-11-01,C-1089,Premium,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000499,2025-11-01,C-1748,Essencial,Tecnologia,Teclado Mecânico,1,459,0.1,413.1
+PA-000500,2025-11-02,C-1284,Essencial,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000501,2025-11-03,C-1675,Premium,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000502,2025-11-03,C-1194,Premium,Casa & Vida,Garrafa Térmica,1,119,0.1,107.1
+PA-000503,2025-11-04,C-1507,Premium,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000504,2025-11-04,C-1073,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.1,107.1
+PA-000505,2025-11-05,C-1397,Conectado,Tecnologia,Hub USB-C,2,199,0.0,398.0
+PA-000506,2025-11-06,C-1782,Premium,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000507,2025-11-06,C-1015,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000508,2025-11-06,C-1408,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000509,2025-11-07,C-1434,Essencial,Acessórios,Óculos Solar,1,219,0.05,208.05
+PA-000510,2025-11-08,C-1081,Conectado,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000511,2025-11-08,C-1550,Premium,Acessórios,Mochila Urban,3,329,0.0,987.0
+PA-000512,2025-11-09,C-1318,Premium,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000513,2025-11-10,C-1445,Premium,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000514,2025-11-10,C-1317,Premium,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000515,2025-11-11,C-1725,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000516,2025-11-11,C-1536,Essencial,Tecnologia,Fone Studio,1,289,0.0,289.0
+PA-000517,2025-11-12,C-1768,Essencial,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000518,2025-11-13,C-1344,Essencial,Casa & Vida,Manta Nuvem,2,179,0.0,358.0
+PA-000519,2025-11-13,C-1730,Conectado,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000520,2025-11-14,C-1369,Essencial,Acessórios,Mochila Urban,1,329,0.1,296.1
+PA-000521,2025-11-14,C-1377,Conectado,Tecnologia,Webcam Pro,2,349,0.0,698.0
+PA-000522,2025-11-14,C-1691,Conectado,Tecnologia,Hub USB-C,1,199,0.1,179.1
+PA-000523,2025-11-14,C-1003,Premium,Acessórios,Mochila Urban,1,329,0.1,296.1
+PA-000524,2025-11-15,C-1393,Conectado,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000525,2025-11-16,C-1230,Conectado,Tecnologia,Fone Studio,1,289,0.05,274.55
+PA-000526,2025-11-16,C-1278,Premium,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000527,2025-11-16,C-1184,Conectado,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000528,2025-11-17,C-1477,Conectado,Acessórios,Mochila Urban,2,329,0.0,658.0
+PA-000529,2025-11-18,C-1009,Essencial,Casa & Vida,Luminária Arc,1,249,0.05,236.55
+PA-000530,2025-11-18,C-1758,Premium,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000531,2025-11-18,C-1506,Premium,Acessórios,Mochila Urban,1,329,0.1,296.1
+PA-000532,2025-11-19,C-1025,Premium,Tecnologia,Teclado Mecânico,1,459,0.05,436.05
+PA-000533,2025-11-19,C-1344,Essencial,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000534,2025-11-19,C-1107,Premium,Tecnologia,Webcam Pro,2,349,0.0,698.0
+PA-000535,2025-11-19,C-1146,Conectado,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000536,2025-11-19,C-1533,Essencial,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000537,2025-11-20,C-1595,Premium,Casa & Vida,Luminária Arc,3,249,0.0,747.0
+PA-000538,2025-11-21,C-1064,Premium,Tecnologia,Webcam Pro,1,349,0.1,314.1
+PA-000539,2025-11-22,C-1403,Premium,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000540,2025-11-23,C-1240,Essencial,Acessórios,Carteira Slim,1,149,0.0,149.0
+PA-000541,2025-11-23,C-1112,Premium,Tecnologia,Teclado Mecânico,1,459,0.1,413.1
+PA-000542,2025-11-24,C-1124,Conectado,Tecnologia,Webcam Pro,1,349,0.05,331.55
+PA-000543,2025-11-25,C-1123,Conectado,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000544,2025-11-26,C-1042,Conectado,Acessórios,Carteira Slim,2,149,0.1,268.2
+PA-000545,2025-11-27,C-1365,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000546,2025-11-28,C-1032,Essencial,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000547,2025-11-29,C-1097,Essencial,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000548,2025-11-29,C-1125,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000549,2025-11-29,C-1134,Essencial,Tecnologia,Fone Studio,2,289,0.0,578.0
+PA-000550,2025-11-29,C-1597,Essencial,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000551,2025-11-30,C-1662,Essencial,Tecnologia,Fone Studio,3,289,0.0,867.0
+PA-000552,2025-11-30,C-1126,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000553,2025-12-01,C-1444,Premium,Casa & Vida,Garrafa Térmica,1,119,0.1,107.1
+PA-000554,2025-12-02,C-1177,Essencial,Casa & Vida,Luminária Arc,1,249,0.05,236.55
+PA-000555,2025-12-02,C-1287,Essencial,Casa & Vida,Garrafa Térmica,2,119,0.0,238.0
+PA-000556,2025-12-03,C-1252,Conectado,Tecnologia,Fone Studio,1,289,0.1,260.1
+PA-000557,2025-12-04,C-1063,Conectado,Casa & Vida,Luminária Arc,2,249,0.05,473.1
+PA-000558,2025-12-04,C-1205,Conectado,Tecnologia,Hub USB-C,1,199,0.05,189.05
+PA-000559,2025-12-05,C-1020,Conectado,Acessórios,Mochila Urban,1,329,0.1,296.1
+PA-000560,2025-12-05,C-1497,Essencial,Casa & Vida,Manta Nuvem,1,179,0.1,161.1
+PA-000561,2025-12-06,C-1185,Conectado,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000562,2025-12-07,C-1060,Conectado,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000563,2025-12-08,C-1239,Essencial,Casa & Vida,Manta Nuvem,1,179,0.1,161.1
+PA-000564,2025-12-08,C-1273,Conectado,Tecnologia,Fone Studio,1,289,0.0,289.0
+PA-000565,2025-12-09,C-1590,Premium,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000566,2025-12-10,C-1181,Essencial,Casa & Vida,Luminária Arc,2,249,0.0,498.0
+PA-000567,2025-12-10,C-1606,Conectado,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000568,2025-12-10,C-1146,Conectado,Tecnologia,Hub USB-C,2,199,0.1,358.2
+PA-000569,2025-12-11,C-1503,Conectado,Tecnologia,Webcam Pro,1,349,0.0,349.0
+PA-000570,2025-12-11,C-1225,Conectado,Tecnologia,Fone Studio,1,289,0.1,260.1
+PA-000571,2025-12-12,C-1207,Conectado,Casa & Vida,Garrafa Térmica,1,119,0.1,107.1
+PA-000572,2025-12-13,C-1061,Conectado,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000573,2025-12-13,C-1793,Conectado,Tecnologia,Teclado Mecânico,1,459,0.0,459.0
+PA-000574,2025-12-14,C-1722,Essencial,Acessórios,Carteira Slim,2,149,0.0,298.0
+PA-000575,2025-12-15,C-1331,Conectado,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000576,2025-12-15,C-1655,Premium,Tecnologia,Teclado Mecânico,1,459,0.05,436.05
+PA-000577,2025-12-15,C-1711,Conectado,Casa & Vida,Manta Nuvem,1,179,0.1,161.1
+PA-000578,2025-12-16,C-1180,Essencial,Acessórios,Carteira Slim,1,149,0.1,134.1
+PA-000579,2025-12-16,C-1131,Premium,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000580,2025-12-16,C-1401,Premium,Tecnologia,Fone Studio,2,289,0.1,520.2
+PA-000581,2025-12-17,C-1627,Conectado,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000582,2025-12-17,C-1340,Premium,Tecnologia,Fone Studio,2,289,0.0,578.0
+PA-000583,2025-12-17,C-1172,Premium,Acessórios,Mochila Urban,1,329,0.0,329.0
+PA-000584,2025-12-18,C-1215,Premium,Tecnologia,Hub USB-C,1,199,0.0,199.0
+PA-000585,2025-12-18,C-1738,Premium,Tecnologia,Fone Studio,1,289,0.0,289.0
+PA-000586,2025-12-19,C-1424,Premium,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000587,2025-12-20,C-1491,Essencial,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000588,2025-12-21,C-1167,Conectado,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000589,2025-12-21,C-1302,Essencial,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000590,2025-12-22,C-1385,Premium,Casa & Vida,Garrafa Térmica,1,119,0.0,119.0
+PA-000591,2025-12-23,C-1495,Essencial,Tecnologia,Fone Studio,1,289,0.1,260.1
+PA-000592,2025-12-24,C-1161,Essencial,Casa & Vida,Manta Nuvem,1,179,0.05,170.05
+PA-000593,2025-12-24,C-1420,Conectado,Tecnologia,Fone Studio,1,289,0.0,289.0
+PA-000594,2025-12-25,C-1305,Essencial,Acessórios,Óculos Solar,1,219,0.0,219.0
+PA-000595,2025-12-25,C-1563,Conectado,Tecnologia,Fone Studio,1,289,0.1,260.1
+PA-000596,2025-12-26,C-1090,Premium,Tecnologia,Fone Studio,1,289,0.05,274.55
+PA-000597,2025-12-26,C-1205,Conectado,Casa & Vida,Manta Nuvem,1,179,0.05,170.05
+PA-000598,2025-12-26,C-1084,Conectado,Tecnologia,Fone Studio,1,289,0.0,289.0
+PA-000599,2025-12-27,C-1501,Conectado,Tecnologia,Hub USB-C,1,199,0.05,189.05
+PA-000600,2025-12-28,C-1190,Premium,Casa & Vida,Garrafa Térmica,1,119,0.05,113.05
+PA-000601,2025-12-28,C-1046,Premium,Casa & Vida,Luminária Arc,1,249,0.05,236.55
+PA-000602,2025-12-28,C-1276,Premium,Casa & Vida,Luminária Arc,1,249,0.0,249.0
+PA-000603,2025-12-29,C-1555,Essencial,Tecnologia,Fone Studio,1,289,0.0,289.0
+PA-000604,2025-12-29,C-1397,Conectado,Casa & Vida,Manta Nuvem,1,179,0.0,179.0
+PA-000605,2025-12-30,C-1587,Conectado,Casa & Vida,Manta Nuvem,1,179,0.05,170.05
+PA-000606,2025-12-30,C-1732,Conectado,Tecnologia,Webcam Pro,1,349,0.05,331.55
+PA-000607,2025-12-31,C-1151,Premium,Acessórios,Óculos Solar,1,219,0.1,197.1

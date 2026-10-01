@@ -1,0 +1,2 @@
+.sidebar{overflow-y:auto;overscroll-behavior:contain}.sidebar::-webkit-scrollbar{width:4px}.sidebar::-webkit-scrollbar-thumb{background:#303b49;border-radius:4px}
+@media(max-width:760px){.lower-grid{grid-template-columns:minmax(0,1fr);min-width:0}.products-panel{min-width:0;max-width:100%;overflow:hidden}.table-wrap{max-width:100%;overflow-x:auto}}
