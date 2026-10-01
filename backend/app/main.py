@@ -2,7 +2,7 @@
 from pathlib import Path
 import sys
 
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
 from sklearn.linear_model import LinearRegression
@@ -12,7 +12,12 @@ ROOT = Path(__file__).resolve().parents[2]
 DATA_PATH = ROOT / "dados" / "vendas.csv"
 
 app = FastAPI(title="Pulse Analytics API", version="1.0.0", description="Dashboard de vendas com dados fictícios.")
-app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:5173"], allow_methods=["*"], allow_headers=["*"])
+app.add_middleware(
+    CORSMiddleware,
+    allow_origin_regex=r"^https?://(localhost|127\.0\.0\.1)(:\d+)?$",
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 def load_sales() -> pd.DataFrame:
@@ -29,6 +34,11 @@ def filtered_sales(period: str = "12m", category: str = "Todas") -> pd.DataFrame
     if category != "Todas":
         df = df[df["categoria"] == category]
     return df
+
+
+@app.get("/")
+def root():
+    return {"message": "Pulse Analytics API", "status": "online", "docs": "/docs"}
 
 
 @app.get("/api/health")
@@ -80,19 +90,47 @@ def analysis(metric: str = Query("receita", pattern="^(receita|pedidos|clientes)
 
 
 @app.get("/api/forecast")
-def forecast():
-    df = load_sales()
+def forecast(period: str = "Tudo", category: str = "Todas"):
+    df = filtered_sales(period, category)
     df["mes"] = df["data"].dt.to_period("M").dt.to_timestamp()
     series = df.groupby("mes")["receita"].sum().reset_index()
+    if series.empty:
+        raise HTTPException(status_code=422, detail="Não há vendas para os filtros selecionados.")
     series["indice"] = range(len(series))
-    # Avalia em janela temporal: treina no histórico e mede o erro nos últimos 3 meses.
-    split = max(3, len(series) - 3)
-    train, test = series.iloc[:split], series.iloc[split:]
-    model = LinearRegression().fit(train[["indice"]], train["receita"])
-    test_pred = model.predict(test[["indice"]])
-    mae = mean_absolute_error(test["receita"], test_pred)
-    rmse = mean_squared_error(test["receita"], test_pred) ** 0.5
-    future_idx = len(series)
-    prediction = max(0, float(model.predict(pd.DataFrame({"indice": [future_idx]}))[0]))
-    next_month = series.iloc[-1]["mes"] + pd.DateOffset(months=1)
-    return {"metric": "receita", "period": next_month.strftime("%Y-%m"), "prediction": round(prediction, 2), "mae": round(float(mae), 2), "rmse": round(float(rmse), 2), "model": "Regressão Linear", "training_points": len(train), "history": [{"date": r.mes.strftime("%Y-%m"), "actual": round(float(r.receita), 2), "predicted": round(float(model.predict(pd.DataFrame({"indice": [r.indice]}))[0]), 2)} for r in series.itertuples()]}
+    mae = rmse = None
+    validation_points = 0
+    if len(series) > 1:
+        split = max(1, len(series) - 3)
+        train, test = series.iloc[:split], series.iloc[split:]
+        validation_model = LinearRegression().fit(train[["indice"]], train["receita"])
+        test_pred = validation_model.predict(test[["indice"]])
+        mae = float(mean_absolute_error(test["receita"], test_pred))
+        rmse = float(mean_squared_error(test["receita"], test_pred) ** 0.5)
+        validation_points = len(train)
+
+    model = LinearRegression().fit(series[["indice"]], series["receita"])
+    future_rows = []
+    for offset in range(1, 4):
+        future_date = series.iloc[-1]["mes"] + pd.DateOffset(months=offset)
+        estimate = max(0, float(model.predict(pd.DataFrame({"indice": [len(series) + offset - 1]}))[0]))
+        future_rows.append({"date": future_date.strftime("%Y-%m"), "prediction": round(estimate, 2)})
+
+    return {
+        "metric": "receita",
+        "period": future_rows[0]["date"],
+        "prediction": future_rows[0]["prediction"],
+        "mae": round(mae, 2) if mae is not None else None,
+        "rmse": round(rmse, 2) if rmse is not None else None,
+        "model": "Regressão Linear",
+        "training_points": len(series),
+        "validation_training_points": validation_points,
+        "history": [
+            {
+                "date": row.mes.strftime("%Y-%m"),
+                "actual": round(float(row.receita), 2),
+                "predicted": round(float(model.predict(pd.DataFrame({"indice": [row.indice]}))[0]), 2),
+            }
+            for row in series.itertuples()
+        ],
+        "future": future_rows,
+    }

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Activity, ArrowDownRight, ArrowUpRight, BarChart3, Bell, ChevronDown, CircleHelp, Download, LayoutDashboard, RefreshCw, Search, Settings2, Sparkles, Users, Wallet, ShoppingBag, X, Zap } from 'lucide-react'
+import ForecastPanel, { type ForecastModel } from './ForecastPanel'
 import { Area, AreaChart, Bar, BarChart, CartesianGrid, Cell, Pie, PieChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 
 const API = '/api'
@@ -13,10 +14,9 @@ type Dashboard = {
   top_products: { product: string; category?: string; units: number; revenue: number }[]
   insights: string[]
 }
-type Forecast = { period: string; prediction: number; mae: number; rmse: number; training_points: number; history: { date: string; actual: number; predicted: number }[] }
 type Toast = { kind: 'success' | 'error'; text: string }
 
-const money = (value: number) => new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(value)
+const money = (value: number | null) => value === null ? '—' : new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(value)
 const shortMoney = (value: number) => value >= 1000 ? `R$ ${(value / 1000).toFixed(1).replace('.', ',')}k` : money(value)
 const colorSet = ['#927dff', '#49b5e8', '#45d3a2']
 const viewTitles: Record<View, string> = {
@@ -54,7 +54,7 @@ export default function App() {
   const [view, setView] = useState<View>('Overview')
   const [metric, setMetric] = useState('Receita')
   const [data, setData] = useState<Dashboard | null>(null)
-  const [forecast, setForecast] = useState<Forecast | null>(null)
+  const [forecast, setForecast] = useState<ForecastModel | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
   const [updatedAt, setUpdatedAt] = useState<Date | null>(null)
@@ -76,12 +76,13 @@ export default function App() {
     const controller = new AbortController()
     setLoading(true)
     setError('')
+    const forecastFilters = view === 'Forecast' ? `?period=${encodeURIComponent(period)}&category=${encodeURIComponent(category)}` : ''
     Promise.all([
       fetch(`${API}/dashboard?period=${encodeURIComponent(period)}&category=${encodeURIComponent(category)}`, { signal: controller.signal }),
-      fetch(`${API}/forecast`, { signal: controller.signal }),
+      fetch(`${API}/forecast${forecastFilters}`, { signal: controller.signal }),
     ]).then(async ([dashboardResponse, forecastResponse]) => {
       if (!dashboardResponse.ok || !forecastResponse.ok) throw new Error('A API retornou um erro ao carregar os dados.')
-      const [dashboardBody, forecastBody] = await Promise.all([dashboardResponse.json(), forecastResponse.json()]) as [Dashboard, Forecast]
+      const [dashboardBody, forecastBody] = await Promise.all([dashboardResponse.json(), forecastResponse.json()]) as [Dashboard, ForecastModel]
       setData(dashboardBody)
       setForecast(forecastBody)
       setUpdatedAt(new Date())
@@ -98,7 +99,7 @@ export default function App() {
       }
     })
     return () => controller.abort()
-  }, [period, category, reloadKey])
+  }, [period, category, reloadKey, view])
 
   useEffect(() => {
     if (!autoRefresh) return
@@ -163,7 +164,10 @@ export default function App() {
     }
     const rows: (string | number)[][] = [['Tipo', 'Data', 'Categoria / segmento', 'Nome', 'Unidades', 'Pedidos', 'Receita', 'Clientes']]
     if (scope === 'Forecast') {
-      if (forecast) rows.push(['Previsão', forecast.period, '', 'Estimativa do próximo mês', '', '', forecast.prediction, ''])
+      if (forecast) {
+        rows.push(['Filtro', period, category, 'Período e categoria selecionados', '', '', '', ''])
+        ;(forecast.future ?? []).forEach((point, index) => rows.push(['Previsão', point.date, category, `Mês +${index + 1}`, '', '', point.prediction, '']))
+      }
       ;(forecast?.history ?? []).forEach(point => rows.push(['Histórico ajustado', point.date, '', 'Receita observada', '', '', point.actual, '']))
       ;(forecast?.history ?? []).forEach(point => rows.push(['Histórico ajustado', point.date, '', 'Estimativa do modelo', '', '', point.predicted, '']))
       downloadCsv('pulse-previsao.csv', rows)
@@ -195,7 +199,7 @@ export default function App() {
   const showProducts = showOverview || showAnalytics || view === 'Products'
   const showCharts = showOverview || showAnalytics
 
-  return <div className="shell">
+  return <div className={`shell ${showForecast ? 'forecast-active' : ''}`}>
     <aside className="sidebar">
       <button className="brand" onClick={() => setView('Overview')} aria-label="Ir para visão geral"><span className="brandmark"><Activity size={19} /></span><span>pulse<span className="brand-light">.analytics</span></span></button>
       <button className="workspace workspace-button" onClick={() => setPopover(popover === 'workspace' ? '' : 'workspace')} aria-expanded={popover === 'workspace'}><span className="workspace-icon">N</span><span><b>Northstar Studio</b><small>Workspace principal</small></span><ChevronDown size={15} /></button>
@@ -228,12 +232,12 @@ export default function App() {
       </header>
 
       <div className="content">
+        {showForecast && <ForecastPanel forecast={forecast} period={period} category={category} loading={loading} />}
         <div className="heading-row"><div><div className="eyebrow"><span className="live-dot" /> SEU NEGÓCIO EM TEMPO REAL</div><h1>{viewTitles[view]}</h1><p className="subtitle">Acompanhe seus resultados e transforme dados em decisões.</p></div><button className="export" onClick={() => exportData(view === 'Settings' ? 'Overview' : view)} disabled={!data}><Download size={15} /> Exportar CSV</button></div>
         {error && <div className="error" role="alert">Não foi possível conectar à API. Inicie o backend em <code>localhost:8000</code>. <span>{error}</span><button onClick={refreshData}>Tentar novamente</button></div>}
 
         {view !== 'Settings' && <div className="filter-row"><div className="filter-left"><span className="filter-caption">Visualizando</span><select value={period} onChange={event => setPeriod(event.target.value)} aria-label="Período"><option value="3m">Últimos 3 meses</option><option value="6m">Últimos 6 meses</option><option value="12m">Últimos 12 meses</option><option value="Tudo">Todo o período</option></select><span className="filter-caption category-caption">Categoria</span><select value={category} onChange={event => setCategory(event.target.value)} aria-label="Categoria"><option value="Todas">Todas</option>{data?.sales_by_category.map(item => <option key={item.category} value={item.category}>{item.category}</option>)}</select>{(period !== '12m' || category !== 'Todas' || query) && <button className="clear-filters" onClick={clearFilters}>Limpar filtros</button>}</div><div className="updated"><span className={`live-dot ${loading ? 'loading-dot' : ''}`} />{loading ? 'Atualizando dados...' : updatedAt ? `Atualizado às ${updatedAt.toLocaleTimeString('pt-BR')}` : 'Aguardando dados'}<button className="refresh-button" onClick={refreshData} disabled={loading} aria-label="Atualizar dados" title="Atualizar dados"><RefreshCw size={14} className={loading ? 'spin' : ''} /></button></div></div>}
 
-        {showForecast && <article className="panel forecast-detail"><div className="forecast-copy"><span className="forecast-label">MODELO DIDÁTICO · REGRESSÃO LINEAR</span><h2>Receita estimada para {forecast?.period || '—'}: {forecast ? money(forecast.prediction) : '—'}</h2><p>O modelo aprende uma tendência linear a partir da receita mensal e extrapola um mês à frente. Treinado com {forecast?.training_points || 0} meses históricos; avaliação nos três meses seguintes ao treino.</p></div><div className="forecast-metrics"><div><span>MAE</span><b>{forecast ? money(forecast.mae) : '—'}</b></div><div><span>RMSE</span><b>{forecast ? money(forecast.rmse) : '—'}</b></div><div><span>Método</span><b>Regressão Linear</b></div></div><p className="forecast-note">Os erros são calculados em meses de validação que não participaram do ajuste do modelo. A regressão linear é simples de explicar, mas não captura sazonalidade nem campanhas. A previsão usa todo o histórico do CSV, independentemente do filtro de período.</p><div className="forecast-history"><h3>Histórico e ajuste do modelo</h3><div className="chart-area"><ResponsiveContainer width="100%" height="100%"><AreaChart data={forecast?.history || []}><CartesianGrid stroke="#222936" vertical={false} /><XAxis dataKey="date" tickFormatter={value => new Date(`${value}-02`).toLocaleDateString('pt-BR', { month: 'short' })} axisLine={false} tickLine={false} tick={{ fill: '#788292', fontSize: 11 }} /><YAxis tickFormatter={shortMoney} axisLine={false} tickLine={false} tick={{ fill: '#788292', fontSize: 11 }} width={53} /><Tooltip contentStyle={{ background: '#151c26', border: '1px solid #2a3442', borderRadius: 10, color: '#fff' }} formatter={(value: number, name: string) => [money(value), name === 'actual' ? 'Receita observada' : 'Ajuste linear']} /><Area type="monotone" dataKey="actual" name="actual" stroke="#49b5e8" fill="#49b5e8" fillOpacity={0.08} /><Area type="monotone" dataKey="predicted" name="predicted" stroke="#a294ff" fill="none" strokeDasharray="5 4" /></AreaChart></ResponsiveContainer></div></div></article>}
 
         {view === 'Settings' && <article className="panel settings-panel"><div className="panel-head"><div><h2>Preferências do dashboard</h2><p>Configurações salvas neste navegador.</p></div><Settings2 size={18} /></div><label className="setting-row"><span><b>Atualização automática</b><small>Consultar a API a cada 60 segundos enquanto o dashboard estiver aberto.</small></span><input type="checkbox" checked={autoRefresh} onChange={event => changeAutoRefresh(event.target.checked)} /></label><div className="setting-row"><span><b>Fonte de dados</b><small>API FastAPI local · dados/vendas.csv</small></span><span className={`api-state ${error ? 'offline' : ''}`}>{error ? 'Indisponível' : loading ? 'Conectando' : 'Conectada'}</span></div><div className="setting-row"><span><b>Filtros padrão</b><small>Restaura para os últimos 12 meses e todas as categorias.</small></span><button className="text-button" onClick={clearFilters}>Restaurar</button></div><p className="settings-note">Os registros de vendas e a conversão exibida são sintéticos/didáticos; não representam clientes ou operações reais.</p></article>}
 

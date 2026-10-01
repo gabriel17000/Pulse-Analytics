@@ -43,7 +43,7 @@ Requer Python 3.10+ e Node.js 20+.
 4. Em outro terminal, instale o frontend: `cd frontend`, `npm install`, `npm run dev`.
 5. Abra `http://localhost:5173`.
 
-Durante o desenvolvimento, o Vite encaminha `/api` para o FastAPI local em `http://localhost:8000`, sem depender da porta escolhida pelo frontend. Para executar os testes, na raiz com ambiente virtual ativo: `python -m pytest backend/tests`.
+Durante o desenvolvimento, o Vite encaminha `/api` para o FastAPI em `http://127.0.0.1:8000`, sem depender se a interface iniciou em `5173`, `5174` ou outra porta livre. A API também aceita CORS apenas de origens `localhost`/`127.0.0.1`, incluindo portas de desenvolvimento alternativas. Para executar os testes, na raiz com ambiente virtual ativo: `python -m pytest backend/tests`.
 
 ## Como funciona o Machine Learning
 
